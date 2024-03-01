@@ -8,11 +8,17 @@ function prime()
     end
 end
 
-print("Enter code:")
-local code = io.read()
+function repl()
+    print("Enter code:")
+    local code = io.read()
 
-if code == "'" then
-    prime()
+    if code == "'" then
+        prime()
+    end
+    
+    repl()
 end
+
+repl()
 
 -- TODO: Defining new functions
